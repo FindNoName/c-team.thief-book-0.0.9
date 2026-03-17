@@ -1,6 +1,6 @@
 # Thief Book
 
-一个摸鱼看书神器
+一个摸鱼看书神器 VSCode插件
 
 ![](https://raw.githubusercontent.com/cteams/Thief-Book-VSCode/master/images/1.png)
 
@@ -12,6 +12,8 @@
 
 > 需要填写 TXT小说 路径才可以使用此插件
 
+- 默认打开一段时间不操作自动执行老板键
+- 自动执行老板键的时间：120
 - 当前页数：1
 - 每页长度：50
 - 是否为英文：false 如果是英文小说，请勾选
