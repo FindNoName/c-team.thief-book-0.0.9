@@ -12,8 +12,8 @@
 
 > 需要填写 TXT小说 路径才可以使用此插件
 
-- 默认打开一段时间不操作自动执行老板键
 - 自动执行老板键的时间：120
+- 默认打开一段时间不操作自动执行老板键
 - 当前页数：1
 - 每页长度：50
 - 是否为英文：false 如果是英文小说，请勾选
@@ -41,17 +41,17 @@
 
 **WIN**
 
-`Ctrl+M` 老板键 。 随机显示不同语言的 Hello World ，随时可用
+`Alt+Q` 老板键 。 随机显示不同语言的 Hello World ，随时可用
 
-`Ctrl+Alt+,` 上一页 。 文本聚焦(编辑代码)的时候，才可以使用
+`Alt+S` 上一页 。 文本聚焦(编辑代码)的时候，才可以使用
 
-`Ctrl+Alt+.` 下一页 。 文本聚焦(编辑代码)的时候，才可以使用
+`Alt+D` 下一页 。 文本聚焦(编辑代码)的时候，才可以使用
 
 `Ctrl+Alt+;` 跳转 。 文本聚焦(编辑代码)的时候，需要设置跳转页面，才可以使用
 
 ---
 
-A fishing and reading magic weapon
+A VS Code extension for reading novels while “fishing” at work.
 
 ## Install
 
@@ -59,13 +59,15 @@ A fishing and reading magic weapon
 
 ## Default configuration
 
-> You need to fill in the TXT novel path to use this plug-in
+> You must set the TXT novel file path before you can use this extension.
 
+- Idle time before triggering Boss Key: 120
+- Automatically triggers the Boss Key after being idle for a period of time
 - Current Page: 1
 - Length per page: 50
-- Is English：false  If it's an English novel, please check it out.
-- Line Break Separation Symbol：A space
-- TXT Absolute Path: null
+- Is English: false (check this if the novel is in English)
+- Line Break Separation Symbol: a space
+- TXT Absolute Path: empty
 
 ## Path format
 
@@ -74,26 +76,26 @@ A fishing and reading magic weapon
 
 ## Shortcut keys
 
-> If there is no absolute local path for TXT fiction, errors will be reported and paths will be prompted.
+> If the local absolute path of the TXT novel is not set, an error will be reported and you will be prompted to configure the path.
 
 **MAC**
 
-`Cmd+M` Boss key. randomly displays Hello World in different languages , Available at any time
+`Cmd+M` Boss Key. Randomly displays “Hello World” in different languages. Available at any time.
 
-`Cmd+,` Previous page. When text is focused (editing code) , Only then can it be used
+`Cmd+,` Previous page. Only works when the text editor is focused (editing code).
 
-`Cmd+.` Next page . When text is focused (editing code) , Only then can it be used
+`Cmd+.` Next page. Only works when the text editor is focused (editing code).
 
-`Cmd+;` Jump page . When focusing on text (editing code), jump pages need to be set before you can use them
+`Cmd+;` Jump page. Only works when the text editor is focused (editing code). You must set the target page before using it.
 
 **WIN**
 
-`Ctrl+M` Boss key. randomly displays Hello World in different languages , Available at any time
+`Alt+Q` Boss Key. Randomly displays “Hello World” in different languages. Available at any time.
 
-`Ctrl+Alt+,` Previous page. When text is focused (editing code) , Only then can it be used
+`Alt+S` Previous page. Only works when the text editor is focused (editing code).
 
-`Ctrl+Alt+.` Next page . When text is focused (editing code) , Only then can it be used
+`Alt+D` Next page. Only works when the text editor is focused (editing code).
 
-`Ctrl+Alt+;` Jump page . When focusing on text (editing code), jump pages need to be set before you can use them
+`Ctrl+Alt+;` Jump page. Only works when the text editor is focused (editing code). You must set the target page before using it.
 
 **Enjoy!**
