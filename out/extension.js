@@ -15,7 +15,7 @@ function activate(context) {
     // The commandId parameter must match the command field in package.json
     let autoBossTimer = undefined;
     let autoBossCountdownTimer = undefined;
-    let autoBossStopped = false;
+    let autoBossPaused = false;
     const clearAutoBossTimer = () => {
         if (autoBossTimer) {
             clearTimeout(autoBossTimer);
@@ -26,13 +26,13 @@ function activate(context) {
             autoBossCountdownTimer = undefined;
         }
     };
-    const stopAutoBoss = () => {
-        autoBossStopped = true;
+    const pauseAutoBoss = () => {
+        autoBossPaused = true;
         clearAutoBossTimer();
     };
     const scheduleAutoBossTimer = () => {
         clearAutoBossTimer();
-        if (autoBossStopped) {
+        if (autoBossPaused) {
             return;
         }
         const config = vscode_1.workspace.getConfiguration();
@@ -49,10 +49,11 @@ function activate(context) {
         autoBossTimer = setTimeout(() => {
             clearAutoBossTimer();
             vscode_1.commands.executeCommand('extension.displayCode');
-            stopAutoBoss();
+            pauseAutoBoss();
         }, delaySeconds * 1000);
     };
     const markReadingActivity = () => {
+        autoBossPaused = false;
         scheduleAutoBossTimer();
     };
     // 老板键
@@ -71,7 +72,7 @@ function activate(context) {
         ];
         var index = Math.floor((Math.random() * lauage_arr_list.length));
         vscode_1.window.setStatusBarMessage(lauage_arr_list[index]);
-        stopAutoBoss();
+        pauseAutoBoss();
     });
     // 下一页
     let getNextPage = vscode_1.commands.registerCommand('extension.getNextPage', () => {
