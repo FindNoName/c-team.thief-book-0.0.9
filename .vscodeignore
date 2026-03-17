@@ -1,0 +1,15 @@
+# Development and workspace metadata
+.vscode/**
+.vscode-test/**
+.git/**
+.gitignore
+
+# Source, tests, and maps not required at runtime
+src/**
+test/**
+**/*.map
+**/*.ts
+
+# Prevent accidental recursive build output from being packaged
+out/out/**
+out/**/out/**
